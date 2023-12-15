@@ -9,7 +9,7 @@ interface ApiService {
 
     // https://www.themealdb.com/api/json/v1/1/filter.php?c=Chicken
 
-    @GET("/json")
+    @GET("api/json/v1/1/filter.php")
     suspend fun getChickenMeal(
         @Query("c") c: String
     ): GetChickenMealResponse

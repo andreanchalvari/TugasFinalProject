@@ -13,7 +13,7 @@ interface AppContainer {
 
 class DefaultAppContainer: AppContainer {
 
-    private val BASE_URL = "https://www.themealdb.com/api/json/v1/1/filter.php?c=Chicken"
+    private val BASE_URL = "https://www.themealdb.com"
 
     private val retrofit = Retrofit.Builder()
         .addConverterFactory(Json.asConverterFactory("application/json".toMediaType()))
